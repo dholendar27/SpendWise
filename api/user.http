@@ -1,0 +1,24 @@
+### Signup
+POST http://localhost:5000/signup
+Content-Type: application/json
+
+{
+  "first_name" : "Venkatasai",
+  "last_name" : "pothireddy",
+  "email" : "dholendarreddy@gmail.com",
+  "password" : "Admin@123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email" : "dholendarreddy@gmail.com",
+  "password" : "Admin@123"
+}
+
+###
+POST http://localhost:5000/refresh
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczMDM1Njg2MiwianRpIjoiYzE1N2YxMjctZjE2NS00MzU5LTgxNWMtN2U1ZjU2MWViN2QyIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiIyN2RhYTg3Zi02MGZjLTRmZjAtYThhNS1kZGMzNmI0NjhmNDEiLCJuYmYiOjE3MzAzNTY4NjIsImNzcmYiOiJkODVkZDNkMS00M2Y3LTRhYzUtOTJjOS0yYWE1ZGYzMTM3NTkiLCJleHAiOjE3MzI5NDg4NjJ9.gYbtUQW3UOtB2s_k5k8IkJKFEd7UQS2B7yP1F21mHNw
